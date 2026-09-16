@@ -15,6 +15,14 @@ Education
 - **PhD candidate, Chemical Engineering**, Yale University, 2022–present
 - **BS, Chemical Engineering**, University of Tehran
 
+Awards
+======
+
+- **Advanced Graduate Leadership Award**, Yale University (2024--Present)
+- **Conference Travel Fellowship**, Yale University (2024, 2025)
+- **1st Place**, Rahneshan Innovation Competition (2021)
+- **First in Class**, B.S. Chemical Engineering, University of Tehran (2021)
+
 Research
 ======
 
