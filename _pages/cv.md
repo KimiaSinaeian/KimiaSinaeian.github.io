@@ -23,6 +23,19 @@ Awards
 - **1st Place**, Rahneshan Innovation Competition (2021)
 - **First in Class**, B.S. Chemical Engineering, University of Tehran (2021)
 
+Research Experience
+======
+
+**Yale University**<br>
+**Graduate Researcher**, Computational Soft Matter Group<br>
+New Haven, CT | 2022 -- Present
+
+- designed/maintained reproducible Python pipelines for structure preparation, atom labeling, post-processing, and large-scale molecular simulation analysis.
+- built high-throughput workflows to identify ice-binding sites and compare binding energetics across protein classes and mutations.
+- developed/evaluated ML prototypes on structure-based descriptors.
+- automated job-array submission and optimized analysis workflows to improve throughput and enable scalable downstream training and reproducible reporting.
+- first author of *The Journal of Chemical Physics* **162, 164102 (2025)** on robust computational strategies for ice nucleation studies.
+
 Research
 ======
 
