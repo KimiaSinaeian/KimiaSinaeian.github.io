@@ -93,8 +93,6 @@ $line: rgba(49, 54, 149, .18);
 .button--primary { background: $orange; color: $indigo !important; }
 .button--quiet { border-color: rgba(255,255,255,.5); color: white !important; }
 .button--light { background: $cream; color: $indigo !important; }
-.hero-caption { position: absolute; right: max(32px, calc((100vw - 1180px) / 2)); bottom: 2rem; z-index: 1; margin: 0; color: rgba(255,255,255,.7); font-size: .62rem; letter-spacing: .1em; text-transform: uppercase; }
-
 .editorial-section { display: grid; grid-template-columns: 180px minmax(0, 1fr); gap: clamp(2rem, 5vw, 5rem); max-width: 1240px; margin: 0 auto; padding: clamp(5rem, 9vw, 8rem) 32px; scroll-margin-top: 76px; }
 .editorial-section--tint { max-width: none; padding-right: max(32px, calc((100vw - 1180px) / 2)); padding-left: max(32px, calc((100vw - 1180px) / 2)); background: rgba(171, 217, 233, .2); }
 .editorial-section--deep { max-width: none; padding-right: max(32px, calc((100vw - 1180px) / 2)); padding-left: max(32px, calc((100vw - 1180px) / 2)); background: $indigo; color: white; }
@@ -198,7 +196,6 @@ html[data-theme="dark"] .editorial-site .portfolio-footer { background: #111527;
   .portfolio-hero { min-height: 700px; padding: 5rem 22px; background-position: center, 67% center; }
   .portfolio-hero__copy { width: 100%; }
   .portfolio-hero h1 { font-size: clamp(3.6rem, 20vw, 5rem); }
-  .hero-caption { display: none; }
   .editorial-section,
   .editorial-section--tint,
   .editorial-section--deep { grid-template-columns: 1fr; gap: 1.5rem; padding: 4.5rem 22px; }
