@@ -16,6 +16,8 @@ main:
     section_id: research
   - title: "Publications"
     url: /publications/
+  - title: "Gallery"
+    url: /gallery/
   - title: "CV"
     url: /cv/
   - title: "Contact"
