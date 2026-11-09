@@ -12,7 +12,8 @@ redirect_from:
 Education
 ======
 
-- **PhD candidate, Chemical Engineering**, Yale University, 2022–present
+- **PhD candidate, Chemical & Environmental Engineering**, Yale University, 2022–present
+- **MS, Engineering**, Yale University, December 2024
 - **BS, Chemical Engineering**, University of Tehran
 
 Awards
