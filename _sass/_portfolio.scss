@@ -144,7 +144,7 @@ $body-font: "Calibri Light", "Calibri", "Arial", sans-serif;
 
 .research-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
 .research-card { min-height: 0; padding: 1.4rem; border: 1px solid $line; border-radius: 14px; display: flex; flex-direction: column; color: $indigo; font-family: $label-font; font-weight: 400; }
-.editorial-site .research-card h3 { font-family: "Newsreader", Georgia, serif; font-weight: 500; }
+.editorial-site .research-card h3 { font-family: $body-font; font-weight: 300; }
 .research-card--ice { background: $ice; }
 .research-card--protein { background: $cream; }
 .research-card--warm { background: $orange; }
@@ -164,7 +164,7 @@ $body-font: "Calibri Light", "Calibri", "Arial", sans-serif;
 .experience-list p { margin: 0; color: rgba(255,255,255,.82); font-size: .9rem; }
 
 .contact-section { padding-bottom: clamp(4rem, 7vw, 6rem); }
-.contact-email { display: inline-block; color: $indigo; font-size: clamp(1.35rem, 3vw, 2.3rem); text-decoration: none; border-bottom: 1px solid $orange; }
+.contact-email { display: inline-block; color: $indigo; font-size: clamp(1.1rem, 1.8vw, 1.45rem); text-decoration: none; border-bottom: 1px solid $orange; }
 .contact-links { display: flex; flex-wrap: wrap; gap: 1.4rem; margin-top: 2rem; }
 .contact-links a { color: $ink; font-size: .72rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
 
