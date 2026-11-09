@@ -6,6 +6,9 @@ $orange: #fdae61;
 $ink: #171a38;
 $paper: #ffffff;
 $line: rgba(49, 54, 149, .18);
+$label-font: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+$title-font: "Calibri", "Arial", sans-serif;
+$body-font: "Calibri Light", "Calibri", "Arial", sans-serif;
 
 .editorial-site {
   --indigo: #{$indigo};
@@ -17,18 +20,44 @@ $line: rgba(49, 54, 149, .18);
   --line: #{$line};
   background: $paper;
   color: $ink;
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: $body-font;
+  font-weight: 300;
 }
 
 .editorial-site h1,
 .editorial-site h2,
 .editorial-site h3,
+.editorial-site h4,
+.editorial-site h5,
+.editorial-site h6,
 .editorial-site .page__title,
 .editorial-site .archive__item-title {
   color: inherit;
-  font-family: "Newsreader", Georgia, serif;
-  font-weight: 500;
+  font-family: $title-font;
+  font-weight: 700;
 }
+
+/* Preserve the existing type in labels, metadata, controls, and photo cards. */
+.editorial-site .eyebrow,
+.editorial-site .section-label,
+.editorial-site .hero-role,
+.editorial-site .editorial-nav__links,
+.editorial-site .button,
+.editorial-site .about-links,
+.editorial-site .text-link,
+.editorial-site .browse-link,
+.editorial-site .publication-feature__meta,
+.editorial-site .experience-list,
+.editorial-site .contact-links,
+.editorial-site .gallery-intro__label,
+.editorial-site .gallery-section__heading,
+.editorial-site .gallery-card,
+.editorial-site .page__meta,
+.editorial-site .page__date { font-family: $label-font; }
+.editorial-site .experience-list,
+.editorial-site .gallery-card,
+.editorial-site .page__meta,
+.editorial-site .page__date { font-weight: 400; }
 
 .editorial-site .masthead {
   position: sticky;
@@ -46,7 +75,7 @@ $line: rgba(49, 54, 149, .18);
 .editorial-site .masthead__menu,
 .editorial-site .editorial-nav { height: 100%; }
 .editorial-site .editorial-nav { display: flex; align-items: center; }
-.editorial-site .editorial-nav__brand { margin-right: auto; color: $indigo; font-family: "Newsreader", Georgia, serif; font-size: 1.28rem; font-weight: 600; letter-spacing: -.02em; text-decoration: none; }
+.editorial-site .editorial-nav__brand { margin-right: auto; color: $indigo; font-family: $title-font; font-size: 1.28rem; font-weight: 700; letter-spacing: -.02em; text-decoration: none; }
 .editorial-site .editorial-nav__links { display: flex; align-items: center; height: 100%; margin: 0; padding: 0; list-style: none; }
 .editorial-site .editorial-nav__item { margin: 0; }
 .editorial-site .editorial-nav__item a { display: block; padding: .75rem .8rem; color: $ink; font-size: .72rem; font-weight: 650; letter-spacing: .08em; text-decoration: none; text-transform: uppercase; }
@@ -83,9 +112,9 @@ $line: rgba(49, 54, 149, .18);
 .eyebrow { margin: 0 0 1.25rem; font-size: .69rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
 .eyebrow--blue { color: $indigo; }
 .portfolio-hero h1 { margin: 0 0 1rem; color: white; font-size: calc(clamp(3.4rem, 5.5vw, 5rem) - 4pt); line-height: .92; letter-spacing: -.04em; }
-.portfolio-hero h1 span { color: white; font-style: normal; font-weight: 500; }
+.portfolio-hero h1 span { color: white; font-style: normal; font-weight: 700; }
 .hero-role { margin: 0 0 1.8rem; color: $orange; font-size: .82rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
-.hero-lede { max-width: 560px; margin: 0 0 1rem; font-family: "Newsreader", Georgia, serif; font-size: clamp(1.3rem, 1.9vw, 1.7rem); line-height: 1.3; }
+.hero-lede { max-width: 560px; margin: 0 0 1rem; font-size: clamp(1.3rem, 1.9vw, 1.7rem); line-height: 1.3; }
 .hero-detail { max-width: 510px; margin: 0; color: rgba(255,255,255,.75); font-size: .96rem; line-height: 1.75; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 2rem; }
 .button { display: inline-flex; align-items: center; justify-content: center; gap: 1rem; border: 1px solid transparent; border-radius: 999px; padding: .82rem 1.15rem; text-decoration: none !important; font-size: .7rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; transition: transform .2s ease, background-color .2s ease; }
@@ -96,9 +125,11 @@ $line: rgba(49, 54, 149, .18);
 .editorial-section { display: grid; grid-template-columns: 180px minmax(0, 1fr); gap: clamp(2rem, 4vw, 4rem); max-width: 1240px; margin: 0 auto; padding: clamp(3.5rem, 6vw, 5.5rem) 32px; scroll-margin-top: 76px; }
 .editorial-section--tint { max-width: none; padding-right: max(32px, calc((100vw - 1180px) / 2)); padding-left: max(32px, calc((100vw - 1180px) / 2)); background: rgba(171, 217, 233, .2); }
 .editorial-section--deep { max-width: none; padding-right: max(32px, calc((100vw - 1180px) / 2)); padding-left: max(32px, calc((100vw - 1180px) / 2)); background: $indigo; color: white; }
-.section-label p { position: sticky; top: 105px; margin: .1rem 0; color: $indigo; font-size: .66rem; font-weight: 750; letter-spacing: .16em; text-transform: uppercase; }
+.section-label p,
+.section-label .section-label__title { position: sticky; top: 105px; margin: .1rem 0; color: $indigo; font-family: $label-font; font-size: .66rem; font-weight: 750; line-height: 1.5; letter-spacing: .16em; text-transform: uppercase; }
 .editorial-section--deep .section-label p { color: $ice; }
 .section-content { min-width: 0; }
+.editorial-section--unlabeled .section-content { grid-column: 2; }
 .section-content h2 { max-width: 810px; margin: 0 0 1.5rem; font-size: calc(clamp(1.9rem, 3.1vw, 3rem) - 4pt); line-height: 1.08; letter-spacing: -.025em; }
 .section-intro { max-width: 810px; margin-bottom: 2.25rem; }
 .section-intro > p:last-child { max-width: 650px; font-size: 1rem; line-height: 1.75; }
@@ -112,7 +143,8 @@ $line: rgba(49, 54, 149, .18);
 .about-links a:hover, .text-link:hover, .browse-link:hover { color: #1f236f; text-decoration: underline; text-underline-offset: 4px; }
 
 .research-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
-.research-card { min-height: 0; padding: 1.4rem; border: 1px solid $line; border-radius: 14px; display: flex; flex-direction: column; color: $indigo; }
+.research-card { min-height: 0; padding: 1.4rem; border: 1px solid $line; border-radius: 14px; display: flex; flex-direction: column; color: $indigo; font-family: $label-font; font-weight: 400; }
+.editorial-site .research-card h3 { font-family: "Newsreader", Georgia, serif; font-weight: 500; }
 .research-card--ice { background: $ice; }
 .research-card--protein { background: $cream; }
 .research-card--warm { background: $orange; }
@@ -132,8 +164,7 @@ $line: rgba(49, 54, 149, .18);
 .experience-list p { margin: 0; color: rgba(255,255,255,.82); font-size: .9rem; }
 
 .contact-section { padding-bottom: clamp(4rem, 7vw, 6rem); }
-.contact-content h2 { margin-bottom: 2rem; }
-.contact-email { display: inline-block; color: $indigo; font-family: "Newsreader", Georgia, serif; font-size: clamp(1.35rem, 3vw, 2.3rem); text-decoration: none; border-bottom: 1px solid $orange; }
+.contact-email { display: inline-block; color: $indigo; font-size: clamp(1.35rem, 3vw, 2.3rem); text-decoration: none; border-bottom: 1px solid $orange; }
 .contact-links { display: flex; flex-wrap: wrap; gap: 1.4rem; margin-top: 2rem; }
 .contact-links a { color: $ink; font-size: .72rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
 
@@ -237,7 +268,9 @@ html[data-theme="dark"] .editorial-site .portfolio-footer { background: #111527;
   .editorial-section,
   .editorial-section--tint,
   .editorial-section--deep { grid-template-columns: 1fr; gap: 1.35rem; padding: 3.5rem 22px; }
-  .section-label p { position: static; }
+  .section-label p,
+  .section-label .section-label__title { position: static; }
+  .editorial-section--unlabeled .section-content { grid-column: 1; }
   .section-content h2 { font-size: calc(clamp(1.9rem, 7.5vw, 2.5rem) - 4pt); }
   .experience-list > div { grid-template-columns: 1fr; gap: .6rem; }
   .contact-email { overflow-wrap: anywhere; }
