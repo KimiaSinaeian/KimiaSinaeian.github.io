@@ -182,10 +182,10 @@ $body-font: "Lato", "Calibri Light", "Calibri", "Arial", sans-serif;
 .publication-feature > p { max-width: 720px; line-height: 1.7; }
 .browse-link { display: inline-block; margin-top: 2rem; }
 
-.experience-list { margin: .5rem 0 2.5rem; border-top: 1px solid rgba(255,255,255,.28); }
-.experience-list > div { display: grid; grid-template-columns: 210px 1fr; gap: 2rem; padding: 1.3rem 0; border-bottom: 1px solid rgba(255,255,255,.28); }
-.experience-list span { color: $ice; font-size: .7rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
-.experience-list p { margin: 0; color: rgba(255,255,255,.82); font-size: .9rem; }
+.experience-list { margin: .5rem 0 2.5rem; border-top: 1px solid var(--line); }
+.experience-list > div { display: grid; grid-template-columns: 210px 1fr; gap: 2rem; padding: 1.3rem 0; border-bottom: 1px solid var(--line); }
+.experience-list span { color: $indigo; font-size: .7rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
+.experience-list p { margin: 0; color: var(--ink); font-size: .9rem; }
 
 .contact-section { padding-bottom: clamp(4rem, 7vw, 6rem); }
 .contact-email { display: inline-block; color: $indigo; font-size: clamp(1.1rem, 1.8vw, 1.45rem); text-decoration: none; border-bottom: 1px solid $orange; }
@@ -252,7 +252,9 @@ html[data-theme="dark"] .editorial-site .editorial-nav__item a,
 html[data-theme="dark"] .editorial-site .contact-links a { color: #f8f7e7; }
 html[data-theme="dark"] .editorial-site .editorial-nav__brand,
 html[data-theme="dark"] .editorial-site .section-label p,
+html[data-theme="dark"] .editorial-site .section-label .section-label__title,
 html[data-theme="dark"] .editorial-site .eyebrow--blue,
+html[data-theme="dark"] .editorial-site .experience-list span,
 html[data-theme="dark"] .editorial-site .about-links a,
 html[data-theme="dark"] .editorial-site .text-link,
 html[data-theme="dark"] .editorial-site .browse-link,
