@@ -147,7 +147,7 @@ $body-font: "Lato", "Calibri Light", "Calibri", "Arial", sans-serif;
 .button--quiet { border-color: rgba(255,255,255,.5); color: white !important; }
 .button--light { background: $cream; color: $indigo !important; }
 .editorial-section { display: grid; grid-template-columns: 180px minmax(0, 1fr); gap: clamp(2rem, 4vw, 4rem); max-width: 1240px; margin: 0 auto; padding: clamp(3.5rem, 6vw, 5.5rem) 32px; scroll-margin-top: 76px; }
-.editorial-section--tint { max-width: none; padding-right: max(32px, calc((100vw - 1180px) / 2)); padding-left: max(32px, calc((100vw - 1180px) / 2)); background: rgba(171, 217, 233, .2); }
+.editorial-section--tint { max-width: none; padding-right: max(32px, calc((100vw - 1180px) / 2)); padding-left: max(32px, calc((100vw - 1180px) / 2)); background: var(--paper); }
 .editorial-section--deep { max-width: none; padding-right: max(32px, calc((100vw - 1180px) / 2)); padding-left: max(32px, calc((100vw - 1180px) / 2)); background: $indigo; color: white; }
 .section-label p,
 .section-label .section-label__title { position: sticky; top: 105px; margin: .1rem 0; color: $indigo; font-family: $label-font; font-size: .66rem; font-weight: 750; line-height: 1.5; letter-spacing: .16em; text-transform: uppercase; }
@@ -169,9 +169,9 @@ $body-font: "Lato", "Calibri Light", "Calibri", "Arial", sans-serif;
 .research-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
 .research-card { min-height: 0; padding: 1.4rem; border: 1px solid $line; border-radius: 14px; display: flex; flex-direction: column; color: $indigo; font-family: $label-font; font-weight: 400; }
 .editorial-site .research-card h3 { font-family: $body-font; font-weight: 300; }
-.research-card--ice { background: $ice; }
-.research-card--protein { background: $cream; }
-.research-card--warm { background: $orange; }
+.research-card--ice,
+.research-card--protein,
+.research-card--warm { background: #c6dbef; }
 .research-card__number { font-size: .67rem; font-weight: 750; letter-spacing: .1em; }
 .research-card h3 { margin: 2.25rem 0 .75rem; font-size: calc(1.6rem - 4pt); line-height: 1.08; }
 .research-card p { margin: 0; font-size: .86rem; line-height: 1.65; }
@@ -257,7 +257,6 @@ html[data-theme="dark"] .editorial-site .about-links a,
 html[data-theme="dark"] .editorial-site .text-link,
 html[data-theme="dark"] .editorial-site .browse-link,
 html[data-theme="dark"] .editorial-site .contact-email { color: $ice; }
-html[data-theme="dark"] .editorial-site .editorial-section--tint { background: rgba(171,217,233,.07); }
 html[data-theme="dark"] .editorial-site .portfolio-footer { background: #111527; border-color: rgba(171,217,233,.22); }
 
 @media (max-width: 900px) {
