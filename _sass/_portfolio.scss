@@ -8,7 +8,31 @@ $paper: #ffffff;
 $line: rgba(49, 54, 149, .18);
 $label-font: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 $title-font: "Calibri", "Arial", sans-serif;
-$body-font: "Calibri Light", "Calibri", "Arial", sans-serif;
+$body-font: "Lato", "Calibri Light", "Calibri", "Arial", sans-serif;
+
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("../fonts/lato/lato-latin-300-normal.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Lato";
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url("../fonts/lato/lato-latin-300-italic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/lato/lato-latin-700-normal.woff2") format("woff2");
+}
 
 .editorial-site {
   --indigo: #{$indigo};
